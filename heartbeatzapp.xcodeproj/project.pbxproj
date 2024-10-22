@@ -12,6 +12,11 @@
 		714003622CC7425C007D5DA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714003612CC7425C007D5DA2 /* ContentView.swift */; };
 		714003642CC7425E007D5DA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714003632CC7425E007D5DA2 /* Assets.xcassets */; };
 		714003672CC7425E007D5DA2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714003662CC7425E007D5DA2 /* Preview Assets.xcassets */; };
+		714003782CC74382007D5DA2 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714003772CC74382007D5DA2 /* HealthKitManager.swift */; };
+		7140037A2CC743F7007D5DA2 /* HeartRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714003792CC743F7007D5DA2 /* HeartRateManager.swift */; };
+		7140037C2CC74414007D5DA2 /* HeartRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7140037B2CC74414007D5DA2 /* HeartRateModel.swift */; };
+		7140037E2CC7442D007D5DA2 /* HeartRateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7140037D2CC7442D007D5DA2 /* HeartRateViewModel.swift */; };
+		714003802CC7444E007D5DA2 /* HeartRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7140037F2CC7444E007D5DA2 /* HeartRateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,12 @@
 		714003612CC7425C007D5DA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		714003632CC7425E007D5DA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		714003662CC7425E007D5DA2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		714003712CC742B1007D5DA2 /* heartbeatzapp Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "heartbeatzapp Watch App.entitlements"; sourceTree = "<group>"; };
+		714003772CC74382007D5DA2 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		714003792CC743F7007D5DA2 /* HeartRateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateManager.swift; sourceTree = "<group>"; };
+		7140037B2CC74414007D5DA2 /* HeartRateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateModel.swift; sourceTree = "<group>"; };
+		7140037D2CC7442D007D5DA2 /* HeartRateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateViewModel.swift; sourceTree = "<group>"; };
+		7140037F2CC7444E007D5DA2 /* HeartRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +89,12 @@
 		7140035E2CC7425C007D5DA2 /* heartbeatzapp Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				714003772CC74382007D5DA2 /* HealthKitManager.swift */,
+				714003762CC7434D007D5DA2 /* Views */,
+				714003752CC74347007D5DA2 /* ViewModels */,
+				714003742CC7433C007D5DA2 /* Models */,
+				714003732CC74337007D5DA2 /* Services */,
+				714003712CC742B1007D5DA2 /* heartbeatzapp Watch App.entitlements */,
 				7140035F2CC7425C007D5DA2 /* heartbeatzappApp.swift */,
 				714003612CC7425C007D5DA2 /* ContentView.swift */,
 				714003632CC7425E007D5DA2 /* Assets.xcassets */,
@@ -92,6 +109,38 @@
 				714003662CC7425E007D5DA2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		714003732CC74337007D5DA2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				714003792CC743F7007D5DA2 /* HeartRateManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		714003742CC7433C007D5DA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7140037B2CC74414007D5DA2 /* HeartRateModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		714003752CC74347007D5DA2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7140037D2CC7442D007D5DA2 /* HeartRateViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		714003762CC7434D007D5DA2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7140037F2CC7444E007D5DA2 /* HeartRateView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +241,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7140037C2CC74414007D5DA2 /* HeartRateModel.swift in Sources */,
+				7140037A2CC743F7007D5DA2 /* HeartRateManager.swift in Sources */,
+				714003802CC7444E007D5DA2 /* HeartRateView.swift in Sources */,
 				714003622CC7425C007D5DA2 /* ContentView.swift in Sources */,
+				7140037E2CC7442D007D5DA2 /* HeartRateViewModel.swift in Sources */,
 				714003602CC7425C007D5DA2 /* heartbeatzappApp.swift in Sources */,
+				714003782CC74382007D5DA2 /* HealthKitManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,13 +381,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "heartbeatzapp Watch App/heartbeatzapp Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"heartbeatzapp Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = S3VLG2UUJ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "heartbeatzapp-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = heartbeatzapp;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app needs access to your health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app needs to write to your health data";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -357,13 +415,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "heartbeatzapp Watch App/heartbeatzapp Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"heartbeatzapp Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = S3VLG2UUJ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "heartbeatzapp-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = heartbeatzapp;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app needs access to your health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app needs to write to your health data";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
