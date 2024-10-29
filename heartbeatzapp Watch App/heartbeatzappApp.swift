@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SocketIO
 
 @main
 struct heartbeatzapp_Watch_AppApp: App {
@@ -25,3 +26,6 @@ struct heartbeatzapp_Watch_AppApp: App {
         }
     }
 }
+
+socket1 = create_socket()
+
