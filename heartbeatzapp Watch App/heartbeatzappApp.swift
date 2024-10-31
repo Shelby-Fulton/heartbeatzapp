@@ -27,5 +27,3 @@ struct heartbeatzapp_Watch_AppApp: App {
     }
 }
 
-socket1 = create_socket()
-

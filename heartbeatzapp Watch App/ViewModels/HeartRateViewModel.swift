@@ -17,7 +17,8 @@ class HeartRateViewModel: ObservableObject {
     var socket: SocketIOClient!
     
     init() {
-        self.manager = SocketManager(socketURL: URL(string: "http://localhost:3000")!, config: [.log(false), .compress])
+        print("creating socket...")
+        self.manager = SocketManager(socketURL: URL(string: "http://localhost:12355")!, config: [.log(true), .compress])
         self.socket = self.manager.defaultSocket
         
         socket.on(clientEvent: .connect) { data, ack in
@@ -27,9 +28,9 @@ class HeartRateViewModel: ObservableObject {
         socket.on(clientEvent: .disconnect) {data, ack in
             print("Socket disconnected")
         }
-
+        print("trying to connect to server")
         socket.connect()
-        
+        print("connected to server")
     }
     
     // Define a function to start querying heart rate data.
@@ -59,7 +60,7 @@ class HeartRateViewModel: ObservableObject {
 
     func send_HR_data(socket: SocketIOClient, HR_data: String) {
         let message = HR_data
-        socket.emit("heart rate", HR_data)
+        socket.emit("heart rate", message)
     }
     
     
