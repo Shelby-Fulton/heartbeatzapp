@@ -21,11 +21,11 @@
 		71557CFF2CD4050600AE18A1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71557CFE2CD4050600AE18A1 /* ContentView.swift */; };
 		71557D012CD4050700AE18A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71557D002CD4050700AE18A1 /* Assets.xcassets */; };
 		71557D042CD4050700AE18A1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71557D032CD4050700AE18A1 /* Preview Assets.xcassets */; };
-		71557D0D2CD4082D00AE18A1 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71557D0C2CD4082D00AE18A1 /* HealthKitManager.swift */; };
-		71557D0F2CD4086F00AE18A1 /* HeartRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71557D0E2CD4086F00AE18A1 /* HeartRateManager.swift */; };
-		71557D112CD408BE00AE18A1 /* HeartRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71557D102CD408BE00AE18A1 /* HeartRateModel.swift */; };
-		71557D132CD408D800AE18A1 /* HeartRateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71557D122CD408D800AE18A1 /* HeartRateViewModel.swift */; };
-		71557D152CD408F900AE18A1 /* HeartRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71557D142CD408F900AE18A1 /* HeartRateView.swift */; };
+		71557D182CD413BA00AE18A1 /* PhoneSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71557D172CD413BA00AE18A1 /* PhoneSessionDelegate.swift */; };
+		71557D1B2CD4146900AE18A1 /* HeartRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71557D1A2CD4146900AE18A1 /* HeartRateView.swift */; };
+		71557D222CD414D300AE18A1 /* HeartRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71557D212CD414D300AE18A1 /* HeartRateModel.swift */; };
+		71557D252CD414F500AE18A1 /* HeartRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71557D242CD414F500AE18A1 /* HeartRateManager.swift */; };
+		71557D272CD4153400AE18A1 /* HeartRateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71557D262CD4153400AE18A1 /* HeartRateViewModel.swift */; };
 		F45CE01F2CD06B5F007C0173 /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = F45CE01E2CD06B5F007C0173 /* SocketIO */; };
 		F45CE0212CD06BA0007C0173 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45CE0202CD06B9A007C0173 /* Socket.swift */; };
 /* End PBXBuildFile section */
@@ -72,12 +72,12 @@
 		71557CFE2CD4050600AE18A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		71557D002CD4050700AE18A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71557D032CD4050700AE18A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		71557D0C2CD4082D00AE18A1 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
-		71557D0E2CD4086F00AE18A1 /* HeartRateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateManager.swift; sourceTree = "<group>"; };
-		71557D102CD408BE00AE18A1 /* HeartRateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateModel.swift; sourceTree = "<group>"; };
-		71557D122CD408D800AE18A1 /* HeartRateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateViewModel.swift; sourceTree = "<group>"; };
-		71557D142CD408F900AE18A1 /* HeartRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateView.swift; sourceTree = "<group>"; };
 		71557D162CD40A2400AE18A1 /* heatbeatziPhone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = heatbeatziPhone.entitlements; sourceTree = "<group>"; };
+		71557D172CD413BA00AE18A1 /* PhoneSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSessionDelegate.swift; sourceTree = "<group>"; };
+		71557D1A2CD4146900AE18A1 /* HeartRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateView.swift; sourceTree = "<group>"; };
+		71557D212CD414D300AE18A1 /* HeartRateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateModel.swift; sourceTree = "<group>"; };
+		71557D242CD414F500AE18A1 /* HeartRateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateManager.swift; sourceTree = "<group>"; };
+		71557D262CD4153400AE18A1 /* HeartRateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateViewModel.swift; sourceTree = "<group>"; };
 		F45CE0202CD06B9A007C0173 /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -180,14 +180,14 @@
 		71557CFB2CD4050600AE18A1 /* heatbeatziPhone */ = {
 			isa = PBXGroup;
 			children = (
+				71557D192CD4145B00AE18A1 /* Views */,
+				71557D1C2CD4147600AE18A1 /* ViewModels */,
+				71557D202CD414C100AE18A1 /* Models */,
+				71557D232CD414E700AE18A1 /* Services */,
 				71557D162CD40A2400AE18A1 /* heatbeatziPhone.entitlements */,
 				71557CFC2CD4050600AE18A1 /* heatbeatziPhoneApp.swift */,
-				71557D0C2CD4082D00AE18A1 /* HealthKitManager.swift */,
 				71557CFE2CD4050600AE18A1 /* ContentView.swift */,
-				71557D082CD407A100AE18A1 /* Services */,
-				71557D092CD407A800AE18A1 /* Models */,
-				71557D0A2CD407AD00AE18A1 /* ViewModels */,
-				71557D0B2CD407B500AE18A1 /* Views */,
+				71557D172CD413BA00AE18A1 /* PhoneSessionDelegate.swift */,
 				71557D002CD4050700AE18A1 /* Assets.xcassets */,
 				71557D022CD4050700AE18A1 /* Preview Content */,
 			);
@@ -202,36 +202,36 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		71557D082CD407A100AE18A1 /* Services */ = {
+		71557D192CD4145B00AE18A1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				71557D0E2CD4086F00AE18A1 /* HeartRateManager.swift */,
+				71557D1A2CD4146900AE18A1 /* HeartRateView.swift */,
 			);
-			path = Services;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		71557D092CD407A800AE18A1 /* Models */ = {
+		71557D1C2CD4147600AE18A1 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				71557D102CD408BE00AE18A1 /* HeartRateModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		71557D0A2CD407AD00AE18A1 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				71557D122CD408D800AE18A1 /* HeartRateViewModel.swift */,
+				71557D262CD4153400AE18A1 /* HeartRateViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		71557D0B2CD407B500AE18A1 /* Views */ = {
+		71557D202CD414C100AE18A1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				71557D142CD408F900AE18A1 /* HeartRateView.swift */,
+				71557D212CD414D300AE18A1 /* HeartRateModel.swift */,
 			);
-			path = Views;
+			path = Models;
+			sourceTree = "<group>";
+		};
+		71557D232CD414E700AE18A1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				71557D242CD414F500AE18A1 /* HeartRateManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,13 +380,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71557D112CD408BE00AE18A1 /* HeartRateModel.swift in Sources */,
-				71557D0F2CD4086F00AE18A1 /* HeartRateManager.swift in Sources */,
-				71557D152CD408F900AE18A1 /* HeartRateView.swift in Sources */,
 				71557CFF2CD4050600AE18A1 /* ContentView.swift in Sources */,
-				71557D132CD408D800AE18A1 /* HeartRateViewModel.swift in Sources */,
+				71557D1B2CD4146900AE18A1 /* HeartRateView.swift in Sources */,
+				71557D222CD414D300AE18A1 /* HeartRateModel.swift in Sources */,
+				71557D252CD414F500AE18A1 /* HeartRateManager.swift in Sources */,
 				71557CFD2CD4050600AE18A1 /* heatbeatziPhoneApp.swift in Sources */,
-				71557D0D2CD4082D00AE18A1 /* HealthKitManager.swift in Sources */,
+				71557D182CD413BA00AE18A1 /* PhoneSessionDelegate.swift in Sources */,
+				71557D272CD4153400AE18A1 /* HeartRateViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,7 +530,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"heartbeatzapp Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = XC2W6HX5MC;
+				DEVELOPMENT_TEAM = S3VLG2UUJ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "heartbeatzapp-Watch-App-Info.plist";
@@ -564,7 +564,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"heartbeatzapp Watch App/Preview Content\"";
-				DEVELOPMENT_TEAM = XC2W6HX5MC;
+				DEVELOPMENT_TEAM = S3VLG2UUJ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "heartbeatzapp-Watch-App-Info.plist";

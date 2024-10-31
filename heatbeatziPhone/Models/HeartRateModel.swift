@@ -1,8 +1,8 @@
 //
 //  HeartRateModel.swift
-//  heatbeatziPhone
+//  heartbeatzapp Watch App
 //
-//  Created by Shelby Fulton on 10/31/24.
+//  Created by Shelby Fulton on 10/21/24.
 //
 
 import Foundation

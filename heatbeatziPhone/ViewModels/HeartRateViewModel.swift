@@ -1,10 +1,3 @@
-//
-//  HeartRateViewModel.swift
-//  heatbeatziPhone
-//
-//  Created by Shelby Fulton on 10/31/24.
-//
-
 import Foundation
 import HealthKit
 
@@ -28,7 +21,7 @@ class HeartRateViewModel: ObservableObject {
         guard let samples = samples as? [HKQuantitySample] else {
             return
         }
-        
+
         // This code runs on the main thread to update the UI.
         DispatchQueue.main.async {
             // Update the heart rate model with the latest heart rate value, defaulting to 0.0 if no samples are available.

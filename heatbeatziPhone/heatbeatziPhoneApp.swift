@@ -6,23 +6,23 @@
 //
 
 import SwiftUI
+import WatchConnectivity
 
 @main
 struct LiveHeartRate_Watch_AppApp: App {
     
-    @StateObject private var healthKitManager = HealthKitManager()
-    
-    var body: some Scene {
-        WindowGroup {
-            if healthKitManager.isAuthorized {
-                HeartRateView()
-            } else {
-                Text("Requesting Health Data Access...")
+    @StateObject private var sessionDelegate = PhoneSessionDelegate() // WCSession delegate instance
+
+        var body: some Scene {
+            WindowGroup {
+                ContentView()
                     .onAppear {
-                        // Request authorization for HealthKit access when the app launches.
-                        healthKitManager.requestAuthorization()
+                        // Activate WCSession when the app launches
+                        if WCSession.isSupported() {
+                            WCSession.default.delegate = sessionDelegate
+                            WCSession.default.activate()
+                        }
                     }
             }
-        }
     }
 }
