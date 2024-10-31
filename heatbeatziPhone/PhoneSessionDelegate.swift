@@ -10,6 +10,7 @@ import WatchConnectivity
 
 class PhoneSessionDelegate: NSObject, WCSessionDelegate, ObservableObject {
     @Published var displayData: String = "" // Published variable to hold incoming data
+    // testing testing 123
 
     override init() {
         super.init()
